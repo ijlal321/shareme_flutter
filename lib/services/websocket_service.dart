@@ -1,4 +1,6 @@
 // services/websocket_service.dart
+import 'dart:convert';
+
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 class WebSocketService {
@@ -46,6 +48,13 @@ class WebSocketService {
     }
   }
 
+  void registerMasterApp(){
+    String payload =  jsonEncode({
+      'opcode': 1,
+      'data': {},
+    });
+    send(payload);
+  }
   void dispose() {
     disconnect();
   }

@@ -7,10 +7,13 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
         appBar: AppBar(title: Text("My app"),),
-        body: Container(
-          child: Text("body of app"),
+        body: Column(
+          children: [
+ 
+          ],
         ),
       );
   }
