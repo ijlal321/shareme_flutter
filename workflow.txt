@@ -1,0 +1,5 @@
+1. create providers + couple them
+    set clients data inside websocket using set_clients_provider
+    and vice versa
+
+2. complete models, of client
